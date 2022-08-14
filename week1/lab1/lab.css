@@ -1,0 +1,42 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+p {
+    font-size: 24px;
+    border: 3px solid orange;
+    margin: 24px 0px;
+    /* width: 25%; */
+  }
+  
+  .content a {
+    border: 3px solid green;
+  
+    /* margin-top: 10px;
+    height: 100px;
+    width: 10px; */
+  }
+  
+  .content {
+    /* display: flex; */
+  }
+  .header {
+    background-color: grey;
+    color: white;
+    padding: 16px;
+  }
+  
+  .btn {
+    padding: 100px;
+    margin-right: 12px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    /* display: inline-block; */
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
