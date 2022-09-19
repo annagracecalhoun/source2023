@@ -15,9 +15,22 @@
     flex-direction: column;
     
   }
+
+#account {
+    margin-top: 5px; 
+    margin-left: 12px; 
+    display: flex; 
+    flex-direction: row; 
+  }
   
 #profile-pic {
   max-width: 50px; 
+  border-radius: 50%; 
+}
+
+#names {
+  margin-left: 10px; 
+  padding-top: 5px; 
 }
 
 #tweet-handle {
@@ -25,21 +38,23 @@
   font-size: 12px; 
 }
 
-  .tweet-text {
+.tweet-text {
     word-wrap: break-word;
     padding: 12px;
+    margin-top: 5px;
+    font-size: 18px; 
   }
   
-  .tweet-footer{
+.tweet-footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #657786;
     padding: 12px;
     color: white
   }
 
-  .footer-info {
-    color: gray; 
+.footer-info {
+    color: lightgray; 
     font-size: 12px; 
   }
