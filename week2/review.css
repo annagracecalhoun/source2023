@@ -16,6 +16,15 @@
     
   }
   
+#profile-pic {
+  max-width: 50px; 
+}
+
+#tweet-handle {
+  color: gray; 
+  font-size: 12px; 
+}
+
   .tweet-text {
     word-wrap: break-word;
     padding: 12px;
@@ -28,4 +37,9 @@
     background-color: #657786;
     padding: 12px;
     color: white
+  }
+
+  .footer-info {
+    color: gray; 
+    font-size: 12px; 
   }
