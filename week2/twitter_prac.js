@@ -2,12 +2,12 @@
 
 // Create an array called twitter_users with 1 user
 
-let twitter_users = ["@vinay"];
+let twitter_users = ["@evelyn"];
 
 // Add 3 usernames to the array using .push() (hint: make sure the usernames are strings)
 
-twitter_users.push("@jason");
-twitter_users.push("@arjun");
+twitter_users.push("@leo");
+twitter_users.push("@ag");
 twitter_users.push("@sam");
 
 //Create an arrow function called print_array that loops through every username in the array and prints out the username with a “!”At the end

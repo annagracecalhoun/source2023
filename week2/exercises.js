@@ -1,4 +1,4 @@
-/* Do all of these using proper ES6 syntax
+/* 
 Using the following array of objects,
 (1) Write an arrow function that adds a new entry to bookList
 (2) Write an arrow function that removes a specific book from the bookList
@@ -43,7 +43,3 @@ const bookList = [
     { firstName: "Jared", lastName: "Nguyen", gpa: 4.0 }
   ];
   
-  /* (10) Write a function that solves the "every number eventually equals 4" puzzle. The output should be
-      an array of the path you took to make it equal four
-      ex/ [11, 6, 3, 5, 4], [19, 8, 5, 4] or [252, 18, 8, 5, 4]
-      For context: https://puzzling.stackexchange.com/questions/29137/every-number-eventually-equals-4 */
