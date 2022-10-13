@@ -4,6 +4,10 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;    
+    margin: 0 auto; 
+    margin-bottom: 30px;
+    background-color: white;
+
   }
   
 #names {
@@ -39,4 +43,16 @@
 .footer-info {
     color: lightgray; 
     font-size: 18px; 
+  }
+
+  #pic {
+    max-width: 60px;
+    border-radius: 100px;
+    margin-left: 10px; 
+    margin-top: 8px; 
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: row;
   }
