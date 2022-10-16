@@ -5,11 +5,12 @@ const Tweet = props => {
   return (
     <div className="tweet">
         <div id="profile">
-        <img id="pic" src={props.prof} alt="profile img"></img>
-        <div id="names">
-        <p id="tweet-handle">{props.handle}</p>
-        <p>{props.author}</p>
-        </div></div>
+         <img id="pic" src={props.prof} alt="profile img"></img>
+         <div id="names">
+           <p id="tweet-handle">{props.handle}</p>
+            <p>{props.author}</p>
+          </div>
+        </div>
 
       <p class="tweet-text"> {props.content} </p>
       
