@@ -1,5 +1,8 @@
 import React, {useState} from "react";
 import "../Styles/Tweet.css"; 
+import wheart from "../Images/wheart.png"
+import rheart from "../Images/rheart.png"
+
 
 const Tweet = props => {
   const [likes, setLikes] = useState(props.likes); 
@@ -39,6 +42,7 @@ const Tweet = props => {
        </div>
       
       <div class="tweet-footer">
+      {liked? <img className="heart" src={rheart}/> : <img className="heart" src={wheart}/>}
         <p class="footer-info">3:50 PM</p>
         <p class="footer-info">March 21, 2006</p>
         <p class="footer-info">Likes: {likes}</p>
