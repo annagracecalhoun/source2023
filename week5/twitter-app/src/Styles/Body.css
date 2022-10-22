@@ -1,0 +1,12 @@
+#feed {
+    background-color: lightgray;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px; ;
+}
+
+#feedTitle {
+    text-align: center;
+}

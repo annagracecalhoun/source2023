@@ -1,0 +1,33 @@
+#overall {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    border-bottom: 2px solid black;
+    background-color: #00acee ;
+}
+
+.tabs { 
+    margin-top: 35px;
+}
+
+#title {
+    color: white; 
+}
+
+#total-users { 
+    color: white; 
+    margin-top: 35px;
+}
+
+#logo {
+    max-width: 50px;
+    max-height: 50px; 
+    margin-top: 20px; 
+}
+
+#site {
+    display: flex; 
+    flex-direction: row;
+}
