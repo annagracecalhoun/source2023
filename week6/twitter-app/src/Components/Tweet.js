@@ -8,7 +8,6 @@ const Tweet = props => {
   const [likes, setLikes] = useState(props.likes); 
   const [liked, setLiked] = useState(false); 
 
-
   const addLike = () => {
     if (likes === props.likes) {
       setLikes(likes + 1); 

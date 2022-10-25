@@ -2,16 +2,12 @@ import React, {useState} from 'react';
 
 const SearchBar = (props) => {
 
-    const filterTweets = () => {
-        // {props.tweets}.filter().map()
-    } 
+    const [term, setTerm] = useState("");
 
     return(
         <div>
-            <input placeholder="Search term"></input>
-            <button>Search</button>
-
-
+            <input value={term} onChange={e => setTerm(e.target.value)} placeholder="Search term"></input>
+             <button onClick={() => props.onClick(term)}>Search</button>
         </div>
     )
 }

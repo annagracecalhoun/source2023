@@ -18,6 +18,7 @@ const Body = () => {
   const [content, setContent] = useState(""); 
 
   const [allTweets, setAllTweets] = useState(init); 
+  const [filteredTweets, setFilteredTweets] = useState([{content:"hello"}, {content:'goodbye'}]); 
 
 
   const addTweet = () => {
@@ -29,9 +30,25 @@ const Body = () => {
     }
   }
 
+  const filterTweets = (match) => {
+    const result = allTweets.filter((tweet) => {
+      return tweet.content.toLowerCase().includes(match.toLowerCase()); 
+       })
+    setFilteredTweets(result)
+} 
+
+console.log(filteredTweets); 
+
   return (
 
     <div>
+      <div>
+        <SearchBar onClick={(match) => filterTweets(match)}/>
+        <b>Search results:</b>
+        {filteredTweets.map((tweet, i) => (
+        <Tweet handle={tweet.handle} author={tweet.author} content={tweet.content} likes={tweet.likes} prof={tweet.prof} key={i} />
+      ))}
+      </div>
 
       <div>
     <h4>Create a Tweet</h4>
