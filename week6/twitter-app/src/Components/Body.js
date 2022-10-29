@@ -18,7 +18,7 @@ const Body = () => {
   const [content, setContent] = useState(""); 
 
   const [allTweets, setAllTweets] = useState(init); 
-  const [filteredTweets, setFilteredTweets] = useState([{content:"hello"}, {content:'goodbye'}]); 
+  const [filteredTweets, setFilteredTweets] = useState([]); 
 
 
   const addTweet = () => {

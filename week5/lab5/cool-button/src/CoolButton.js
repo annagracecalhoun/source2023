@@ -4,7 +4,8 @@ const CoolButton = (props) => {
     return(
         <div>
 
-            <button onClick={() => props.onClick()}>{props.children}</button>
+            <button onClick={() => props.onClick()}>
+                {props.children}</button>
         </div>
 
     )
