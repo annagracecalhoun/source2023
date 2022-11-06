@@ -16,7 +16,7 @@ function App() {
   }, [])
 
   console.log(blogs); 
-  
+
   const add = () => {
     addDoc(collection(db, "blog"), {
       title: "new post", 
@@ -29,6 +29,14 @@ function App() {
   return (
     <div style={{ textAlign: 'center' }}>
       <button onClick={add}>Add a post</button>
+
+      {blogs.map((post, i) => 
+      <div>
+        <p>Title: {post.title}</p>
+        <p>Author: {post.author}</p>
+        <p>Content: {post.content}</p>
+      </div>)
+      }
      
     </div>
   );
