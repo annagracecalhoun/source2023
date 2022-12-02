@@ -1,7 +1,8 @@
-// Import statements
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore"; 
+import {getFirestore} from 'firebase/firestore'; 
 
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC1PmIcyiGIFuFOXTs_VPJgXce7EO9K_zE",
   authDomain: "blog-92a36.firebaseapp.com",
@@ -11,9 +12,6 @@ const firebaseConfig = {
   appId: "1:645561008282:web:459cda210c8be1fddb9f23"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig); 
+const app = initializeApp(firebaseConfig);
 const db = getFirestore(app); 
 export {db}; 
-
-
