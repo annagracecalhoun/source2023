@@ -1,0 +1,18 @@
+#overall {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    border-bottom: 2px solid black;
+}
+
+.tabs {
+    color: blue; 
+    margin-top: 35px;
+}
+
+#total-users { 
+    color: black; 
+    margin-top: 35px;
+}
