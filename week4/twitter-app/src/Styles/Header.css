@@ -1,0 +1,10 @@
+
+#box {
+    border: 2px black solid; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px; 
+    background-color: #00acee; 
+    color: white; 
+}

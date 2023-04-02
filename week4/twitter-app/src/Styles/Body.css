@@ -1,0 +1,9 @@
+#tweets {   
+    min-width: 650px;
+}
+
+#contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
