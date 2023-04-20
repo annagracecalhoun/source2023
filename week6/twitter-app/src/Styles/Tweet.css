@@ -1,0 +1,70 @@
+.tweet {
+    border: 2px solid #1da1f2;
+    max-width: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;    
+    margin: 0 auto; 
+    margin-bottom: 30px;
+    background-color: white;
+
+  }
+  
+#names {
+  margin-left: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tweet-handle {
+  color: gray; 
+  font-size: 12px; 
+  margin-bottom: -1px; 
+}
+
+.tweet-text {
+    word-wrap: break-word;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 22px; 
+  }
+  
+.tweet-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #657786;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white
+  }
+
+.footer-info {
+    color: lightgray; 
+    font-size: 18px; 
+  }
+
+  #pic {
+    max-width: 60px;
+    border-radius: 100px;
+    margin-left: 10px; 
+    margin-top: 8px; 
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #likes{ 
+    margin-left: 12px; 
+    margin-bottom: 10px; 
+  }
+
+  .heart {
+    max-height: 30px;
+    margin-left: 6px;
+    margin-top: 5px;
+    padding-top: 10px;
+  }
