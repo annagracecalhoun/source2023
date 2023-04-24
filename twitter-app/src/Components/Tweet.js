@@ -2,23 +2,31 @@ import React, {useState} from "react";
 import "../Styles/Tweet.css"; 
 import wheart from "../Images/wheart.png"
 import rheart from "../Images/rheart.png"
+import {db} from "../firebase.js"; 
+import {doc, setDoc, collection} from "firebase/firestore"; 
 
 
 const Tweet = props => {
 
-  const [likes, setLikes] = useState(0); 
+  const [likes, setLikes] = useState(props.likes); 
   const [liked, setLiked] = useState(false); 
 
+  
   const addLike = () => {
-    if (likes === 0) {
+    if (liked === false) {
       setLikes(likes + 1); 
-      setLiked(true); }
+      setLiked(true); 
+      const tweetRef = doc(db, 'allTweets', props.id)
+      setDoc(tweetRef, {likes: likes+1}, {merge: true})
+    }
   }
 
   const removeLike = () => {
-    if (likes !== 0) {
+    if (liked === true) {
        setLikes(likes - 1);
-       setLiked(false);  
+       setLiked(false);
+       const tweetRef = doc(db, 'allTweets', props.id)
+      setDoc(tweetRef, {likes: likes-1}, {merge: true}) 
       }
   }
 
